@@ -4,6 +4,7 @@ const commonFields = {
   title: { type: "string", required: true },
   date: { type: "date", required: true },
   tags: { type: "list", of: { type: "string" }, required: true },
+  description: { type: "string", required: false },
 } as const;
 
 const slugField = (prefix: string) => ({
