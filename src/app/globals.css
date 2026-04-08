@@ -25,6 +25,92 @@ body {
   margin-left: 1px;
 }
 
+/* ── MDX prose ───────────────────────────────────────────── */
+.mdx-content {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.mdx-content h1,
+.mdx-content h2,
+.mdx-content h3,
+.mdx-content h4,
+.mdx-content h5,
+.mdx-content h6 {
+  color: #00ff88;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.mdx-content h1 { font-size: 1.2rem; }
+.mdx-content h2 { font-size: 1.05rem; }
+.mdx-content h3 { font-size: 0.95rem; }
+
+.mdx-content p {
+  margin-bottom: 1.1rem;
+}
+
+.mdx-content a {
+  color: #00ff88;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mdx-content a:hover { color: #fff; }
+
+.mdx-content strong { color: #e0e0e0; }
+.mdx-content em { color: #aaa; }
+
+.mdx-content ul,
+.mdx-content ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1.1rem;
+}
+.mdx-content li { margin-bottom: 0.3rem; }
+
+.mdx-content blockquote {
+  border-left: 2px solid #00ff88;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+.mdx-content hr {
+  border: none;
+  border-top: 1px solid #1e1e1e;
+  margin: 2rem 0;
+}
+
+/* Inline code */
+.mdx-content :not(pre) > code {
+  background: #1a1a1a;
+  color: #00ff88;
+  padding: 1px 5px;
+  font-size: 0.82em;
+  border: 1px solid #2a2a2a;
+}
+
+/* Code blocks */
+.mdx-content pre {
+  background: #111 !important;
+  border: 1px solid #1e1e1e;
+  border-left: 2px solid #00ff88;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+.mdx-content pre code {
+  background: transparent;
+  color: #4ade80;
+  font-size: inherit;
+  border: none;
+  padding: 0;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
