@@ -1,8 +1,29 @@
 ---
-title: "First Devlog Entry"
+title: "Day 1 — scaffolding the site"
 date: "2026-04-07"
-tags: ["building"]
-description: "Getting the dev environment set up and scaffolding the initial project structure."
+tags: ["building", "nextjs"]
+description: "Setting up the project from scratch: Next.js 14, contentlayer, the sidebar, the whole thing."
 ---
 
-Writing code and shipping things.
+Started from zero today. `create-next-app`, TypeScript, Tailwind — the usual.
+
+The interesting part was setting up contentlayer2 to treat MDX files as typed data. Define a schema, point it at a folder, get back a fully-typed collection. It's a nice pattern.
+
+## what got done
+
+- Scaffolded the Next.js 14 project
+- Configured Tailwind with Courier New as the global font
+- Built the sidebar with grouped nav and active link highlighting
+- Set up contentlayer2 with 6 document types
+- List pages and dynamic `[section]/[slug]` routes
+
+## what's next
+
+The site renders but there's nothing real in it yet. Need to fill it with actual content — which is always the harder part.
+
+```bash
+npm run dev
+# ready on http://localhost:3000
+```
+
+Six sections, zero real posts. That changes tomorrow.
